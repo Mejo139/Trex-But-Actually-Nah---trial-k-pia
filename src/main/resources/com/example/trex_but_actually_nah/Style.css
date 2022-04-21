@@ -1,0 +1,11 @@
+.background{
+    -fx-background-image: url('img/background4.png');
+}
+
+.playButton, .helpButton, .exitButton, .menuButton, .subSceneBackground{
+    -fx-background-color: #dca418;
+    -fx-border-color: #cb750b;
+    -fx-background-radius: 16px;
+    -fx-border-radius: 16px;
+    -fx-border-width: 3px;
+}
