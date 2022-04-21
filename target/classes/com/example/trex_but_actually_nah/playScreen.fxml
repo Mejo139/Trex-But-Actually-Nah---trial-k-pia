@@ -3,12 +3,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onMove" prefHeight="800.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trex_but_actually_nah.Controller">
+<AnchorPane fx:id="mainScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onMove" prefHeight="800.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trex_but_actually_nah.Controller">
    <children>
-      <Button fx:id="menuButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onMenu" prefHeight="20.0" prefWidth="100.0" styleClass="menuButton" text="BACK" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="menuButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onPause" prefHeight="20.0" prefWidth="50.0" styleClass="menuButton" text="II" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Showcard Gothic" size="20.0" />
          </font></Button>

@@ -11,34 +11,27 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
-import javafx.stage.FileChooser;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.ResourceBundle;
-import java.util.Timer;
 
 public class Controller implements Initializable {
     @FXML
     private Button playButton, helpButton, exitButton, menuButton;
 
     @FXML
-    private AnchorPane back, subScene;
+    private AnchorPane mainScene, slideMenu;
 
     @FXML
     private Rectangle shade;
@@ -72,7 +65,7 @@ public class Controller implements Initializable {
 
     //metoda, ktora pomocou transitionu privola help tabulku
     public void onHelp(ActionEvent event){
-        subScene.setVisible(true);
+        slideMenu.setVisible(true);
         if (!b){
             transitionLeftToRightMenu();
             transitionLeftToRightLogo();
@@ -84,9 +77,9 @@ public class Controller implements Initializable {
         }
     }
     //metoda, ktora nacita menu.fxml (menu)
-    public void onMenu(ActionEvent event) throws IOException{
+    public void onPause(ActionEvent event) throws IOException{
         if (event.getSource() == menuButton){
-            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("menu.fxml")));
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("pauseScreen.fxml")));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("Style.css")).toString());
@@ -103,17 +96,17 @@ public class Controller implements Initializable {
     //pohyb objektov pomocou transition
     public void transitionLeftToRightMenu(){
         transition = new TranslateTransition();
-        transition.setNode(subScene);
+        transition.setNode(slideMenu);
         transition.setDuration(Duration.seconds(0.5));
-        transition.setToX(back.getWidth()-50);
+        transition.setToX(mainScene.getWidth()-50);
         transition.play();
     }
 
     public void transitionRightToLeftMenu(){
         transition = new TranslateTransition();
-        transition.setNode(subScene);
+        transition.setNode(slideMenu);
         transition.setDuration(Duration.seconds(0.5));
-        transition.setToX(back.getWidth()-576);
+        transition.setToX(mainScene.getWidth()-576);
         transition.play();
     }
 
@@ -121,7 +114,7 @@ public class Controller implements Initializable {
         transition = new TranslateTransition();
         transition.setNode(trexLogo);
         transition.setDuration(Duration.seconds(0.5));
-        transition.setToX(back.getWidth()-20);
+        transition.setToX(mainScene.getWidth()-20);
         transition.play();
     }
 
@@ -129,7 +122,7 @@ public class Controller implements Initializable {
         transition = new TranslateTransition();
         transition.setNode(trexLogo);
         transition.setDuration(Duration.seconds(0.5));
-        transition.setToX(back.getWidth()-596);
+        transition.setToX(mainScene.getWidth()-596);
         transition.play();
     }
 

@@ -7,7 +7,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onMove" prefHeight="800.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trex_but_actually_nah.Controller">
+<AnchorPane fx:id="mainScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onMove" prefHeight="800.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trex_but_actually_nah.Controller">
    <children>
       <Rectangle fx:id="shade" arcHeight="5.0" arcWidth="5.0" fill="#515961" height="800.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="600.0" />
       <VBox prefHeight="800.0" prefWidth="600.0">
@@ -49,7 +49,7 @@
             <Insets left="150.0" />
          </VBox.margin>
       </VBox>
-      <AnchorPane fx:id="subScene" layoutX="-476.0" layoutY="60.0" prefHeight="378.0" prefWidth="449.0" styleClass="subSceneBackground">
+      <AnchorPane fx:id="slideMenu" layoutX="-476.0" layoutY="60.0" prefHeight="378.0" prefWidth="449.0" styleClass="subSceneBackground">
          <children>
             <Label layoutX="14.0" layoutY="34.0" text="You are the last living dinosaur." textFill="WHITE">
                <font>
