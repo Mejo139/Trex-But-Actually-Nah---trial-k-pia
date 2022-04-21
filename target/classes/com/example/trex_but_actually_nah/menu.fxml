@@ -49,7 +49,7 @@
             <Insets left="150.0" />
          </VBox.margin>
       </VBox>
-      <AnchorPane fx:id="slideMenu" layoutX="-476.0" layoutY="60.0" prefHeight="378.0" prefWidth="449.0" styleClass="subSceneBackground">
+      <AnchorPane fx:id="slideMenu" layoutX="-476.0" layoutY="60.0" prefHeight="378.0" prefWidth="449.0" styleClass="slideSceneBackground">
          <children>
             <Label layoutX="14.0" layoutY="34.0" text="You are the last living dinosaur." textFill="WHITE">
                <font>
