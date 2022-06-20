@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.trex_but_actually_nah/com.example.trex_but_actually_nah.Application
+                                com.example.trex_but_actually_nah/com.example.trex_but_actually_nah.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

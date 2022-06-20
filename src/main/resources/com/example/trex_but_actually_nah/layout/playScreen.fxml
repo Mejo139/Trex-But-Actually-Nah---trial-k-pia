@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onMove" prefHeight="800.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trex_but_actually_nah.Game">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="20.0" prefWidth="50.0" styleClass="menuButton" text="II" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="trex" fitHeight="130.0" fitWidth="140.0" onKeyPressed="#onMove" pickOnBounds="true" preserveRatio="true" x="212.0" y="630.0">
+         <image>
+            <Image url="@../img/trexLeft.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

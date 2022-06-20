@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trex_but_actually_nah.Game">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#515961" height="800.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <VBox layoutX="110.0" layoutY="180.0" prefHeight="200.0" prefWidth="400.0" styleClass="pauseSceneBackground">
+         <children>
+            <Label alignment="CENTER" text="GAME OVER!" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="142.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Showcard Gothic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreText" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Showcard Gothic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="160.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="restartButton" alignment="CENTER" mnemonicParsing="false" onAction="#onPlay" styleClass="restartButton" text="RESTART" textAlignment="CENTER" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="147.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Showcard Gothic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="menuButton" alignment="CENTER" mnemonicParsing="false" onAction="#onBackToMenu" styleClass="playButton" text="MENU" textAlignment="CENTER" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="158.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Showcard Gothic" size="20.0" />
+               </font>
+            </Button>
+         </children></VBox>
+   </children>
+</AnchorPane>
